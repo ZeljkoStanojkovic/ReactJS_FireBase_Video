@@ -1,0 +1,131 @@
+.items-center {
+  display: flex;
+  /* establish flex container */
+
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  &--vert {
+    @extend .items-center;
+    flex-direction: column;
+    /* make main axis vertical */
+  }
+  &--hori {
+    @extend .items-center;
+    flex-direction: row;
+    /* make main axis vertical */
+  }
+}
+
+// .u-center-text {
+//   text-align: center !important;
+// }
+
+// .u-margin-bottom-small {
+//   margin-bottom: 1.5rem !important;
+// }
+
+// .u-margin-bottom-medium {
+//   margin-bottom: 4rem !important;
+
+//   @include respond(tab-port) {
+//     margin-bottom: 3rem !important;
+//   }
+// }
+
+// .u-margin-bottom-big {
+//   margin-bottom: 8rem !important;
+
+//   @include respond(tab-port) {
+//     margin-bottom: 5rem !important;
+//   }
+// }
+
+// .u-margin-top-small {
+//   margin-top: 1.5rem !important;
+// }
+
+// .u-margin-top-medium {
+//   margin-top: 4rem !important;
+
+//   @include respond(tab-port) {
+//     margin-top: 3rem !important;
+//   }
+// }
+
+// .u-margin-top-big {
+//   margin-top: 8rem !important;
+// }
+
+// .u-margin-top-huge {
+//   margin-top: 10rem !important;
+// }
+
+// .u-exist-when-not-phone {
+//   display: inherit;
+//   visibility: inherit;
+//   height: inherit;
+
+//   @include respond(phone) {
+//     display: none;
+//     visibility: hidden;
+//     height: 0px;
+//   }
+// }
+
+// .u-exist-only-when-phone {
+//   display: none;
+//   visibility: hidden;
+//   height: 0px;
+
+//   @include respond(phone) {
+//     display: inherit;
+//     visibility: inherit;
+//     height: inherit;
+//   }
+// }
+
+// /*Fix viewport height even when scrolling - with JS code
+
+// */
+// .u-vh70 {
+//   height: 70vh;
+//   height: calc(var(--vh, 1vh) * 100);
+// }
+
+// .u-vh80 {
+//   height: 80vh;
+//   height: calc(var(--vh, 1vh) * 100);
+// }
+
+// .u-vh90 {
+//   height: 90vh;
+//   height: calc(var(--vh, 1vh) * 100);
+// }
+
+// .u-vh100 {
+//   height: 100vh;
+//   height: calc(var(--vh, 1vh) * 100);
+// }
+
+// /**/
+
+// .width-full {
+//   width: 100%;
+// }
+
+// .u-hover {
+//   perspective: 150rem;
+//   -moz-perspective: 150rem;
+//   position: relative;
+//   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+
+//   &-more {
+//     box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.7);
+//   }
+// }
+
+// .u-letterspacing-less {
+//   letter-spacing: 0.15rem;
+// }

@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0rem;
+  //   background-color: black;
+  @include respond(tab-port) {
+    padding: 0rem;
+  }
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: $color-grey-dark-2;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.swiper-container {
+  width: 56vw;
+  height: 42vw;
+
+  @include respond(phone) {
+    width: 100%;
+    height: 75vw;
+  }
+}
+
+.img-slide {
+  width: 100%;
+  height: auto;
+  filter: none;
+  background-image: none;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+// .blur {
+//     /* The image used */
+//     background-image: url("/img/page1.jpeg");
+
+//     /* Add the blur effect */
+//     // filter: blur(8px);
+//     // -webkit-filter: blur(8px);
+
+//     /* Full height */
+
+//     /* Center and scale the image nicely */
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     &>*,
+//     &>*>*,
+//     &>*>*>*,
+//     &>*>*>*>*,
+//     &>*>*>*>*>*,
+//     &>*>*>*>*>*>* {
+//         filter: none;
+//         background-image: none;
+//     }
+//     @include respond(phone) {
+//         background-image: none;
+//         filter: none;
+//     }
+// }
+
+.desktop-bg {
+  // z-index: -10;
+  // background: linear-gradient(to right bottom, rgba($color-grey-text, 0.2), rgba($color-grey-text, 0.3)),
+  //     url(../img/page1.jpeg);
+  // background-size: cover;
+  // background-position: bottom;
+  // position: relative;
+}

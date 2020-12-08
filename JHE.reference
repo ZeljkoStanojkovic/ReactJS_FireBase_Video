@@ -1,0 +1,60 @@
+##scss
+https://create-react-app.dev/docs/adding-a-sass-stylesheet/
+
+
+##color
+https://mycolor.space/gradient?ori=to+right+bottom&hex=%23CC0BE4&hex2=%23C7F400&sub=1
+
+##REGEX 조항제목
+X[0-9 ]{0,}Y[ ]{0,}\([ 0-9A-Z]{0,}\)(=?)|X[0-9 ]{0,}Y
+
+## Firestoe && Google Sheets
+https://levelup.gitconnected.com/import-data-from-google-sheets-to-firestore-using-google-apps-script-b6f857f82a2
+https://dev.to/calvinpak/how-to-read-write-google-sheets-with-react-193l
+
+## firebase-setup
+? Which port do you want to use for the functions emulator? 5001
+? Which port do you want to use for the firestore emulator? 8080
+? Which port do you want to use for the database emulator? 9000
+? Which port do you want to use for the hosting emulator? 5000
+? Which port do you want to use for the pubsub emulator? 8085
+? Would you like to enable the Emulator UI? Yes
+? Which port do you want to use for the Emulator UI (leave empty to use any avai
+lable port)? NaN
+? Would you like to download the emulators now? No
+
+#git
+git add . && git commit -am"Firestore get list trying.." && git push origin         
+
+#json
+https://medium.com/officialrajdeepsingh/how-to-read-local-json-file-in-react-js-564125235fc7
+
+#xml2js object
+https://github.com/Leonidas-from-XIV/node-xml2js
+
+
+#postoffice
+https://biz.epost.go.kr/ui/index.jsp
+
+#doc format
+18(head title), 15(subtitle), 12(normal)
+lineheight 1.5
+Nanum Myeungjo
+
+설명의 경우에 대해 택일
+((
+    ((설명))문구;;
+    ((설명))문구;;
+))
+
+#UID jaehak.lee 
+poy38LeHjmMkI5sXezk9vyw2M8t1
+
+#PDF lib
+https://github.com/mozilla/pdf.js#online-demo
+
+#TODO:
+https://www.npmjs.com/package/docx-templates
+
+
+https://github.com/CookPete/react-player

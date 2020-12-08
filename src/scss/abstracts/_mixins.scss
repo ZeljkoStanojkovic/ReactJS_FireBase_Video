@@ -1,0 +1,110 @@
+//ORDER to APPLY Responsive design
+//base > typography > general layout > grid > page layout > components
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint==tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint==big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+@mixin u-flex-vertical-items-centered {
+  display: flex;
+  /* establish flex container */
+  flex-direction: column;
+  /* make main axis vertical */
+  justify-content: center;
+  /* center items vertically, in this case */
+  align-items: center;
+  /* center items horizontally, in this case */
+  text-align: center !important;
+  height: auto;
+}
+
+@mixin u-flex-horizontal-items-just-top {
+  display: flex;
+  flex-direction: column;
+  text-align: center !important;
+  width: auto;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+
+@mixin u-flex-horizontal-items-centered {
+  display: flex;
+  flex-direction: row;
+  text-align: center !important;
+  width: auto;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@mixin u-hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+}
+
+@mixin u-hover-more {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.7);
+}
+
+@mixin u-hover-less {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.25);
+}

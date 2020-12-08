@@ -1,0 +1,482 @@
+.btn--bar {
+  color: $color-black;
+  background-color: $color-white;
+  height: 56px;
+  width: 98%;
+  line-height: 56px;
+  white-space: nowrap;
+  border-style: dashed;
+}
+
+// Material design buttons (CSS-only)
+//https://codepen.io/sebj54/pen/oxluI
+
+// .btn {
+//   position: relative;
+
+//   display: block;
+//   margin: 30px auto;
+//   padding: 0;
+
+//   overflow: hidden;
+
+//   border-width: 0;
+//   outline: none;
+//   border-radius: 2px;
+//   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+//   background-color: $color-primary;
+//   color: #ecf0f1;
+
+//   transition: background-color 0.3s;
+// }
+
+// .btn:hover,
+// .btn:focus {
+//   background-color: $color-primary-dark;
+// }
+
+// .btn > * {
+//   position: relative;
+// }
+
+// .btn span {
+//   display: block;
+//   padding: 12px 24px;
+// }
+
+// .btn:before {
+//   content: "";
+
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+
+//   display: block;
+//   width: 0;
+//   padding-top: 0;
+
+//   border-radius: 100%;
+
+//   background-color: rgba(236, 240, 241, 0.3);
+
+//   -webkit-transform: translate(-50%, -50%);
+//   -moz-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   -o-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+// }
+
+// .btn:active:before {
+//   width: 120%;
+//   padding-top: 120%;
+
+//   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+// }
+
+// .btn.orange {
+//   background-color: #e67e22;
+// }
+
+// .btn.orange:hover,
+// .btn.orange:focus {
+//   background-color: #d35400;
+// }
+
+// .btn.red {
+//   background-color: #e74c3c;
+// }
+
+// .btn.red:hover,
+// .btn.red:focus {
+//   background-color: #c0392b;
+// }
+
+// // Pure CSS Material Outlined Button
+// // https://codepen.io/finnhvman/pen/GYaWdV
+
+// .md-btn-outline {
+//   display: inline-block;
+//   box-sizing: border-box;
+//   border: solid 1px;
+//   border-color: $color-primary;
+//   border-radius: 4px;
+//   padding: 0 16px;
+//   min-width: 64px;
+//   height: 32px;
+//   vertical-align: middle;
+//   text-align: center;
+//   text-overflow: ellipsis;
+//   text-transform: uppercase;
+//   color: $color-primary;
+//   background-color: transparent;
+//   // font-family: var(
+//   //   --pure-material-font,
+//   //   "Roboto",
+//   //   "Segoe UI",
+//   //   BlinkMacSystemFont,
+//   //   system-ui,
+//   //   -apple-system
+//   // );
+//   font-size: 12px;
+//   font-weight: 400;
+//   line-height: 30px;
+//   overflow: hidden;
+//   outline: none;
+//   cursor: pointer;
+//   &--white {
+//     @extend .md-btn-outline;
+//     border-color: white;
+//     color: white;
+//   }
+//   &--next {
+//     @extend .md-btn-outline;
+//     border-color: white;
+//     color: white;
+//     min-width: 128px;
+//   }
+// }
+
+// .md-btn-outline::-moz-focus-inner {
+//   border: none;
+// }
+
+/* Overlay */
+// .md-btn-outline::before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   background-color: currentColor;
+//   opacity: 0;
+//   transition: opacity 0.2s;
+// }
+
+/* Ripple */
+// .md-btn-outline::after {
+//   content: "";
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   border-radius: 50%;
+//   padding: 50%;
+//   width: 32px;
+//   height: 32px;
+//   background-color: currentColor;
+//   opacity: 0;
+//   transform: translate(-50%, -50%) scale(1);
+//   transition: opacity 1s, transform 0.5s;
+// }
+
+/* Hover, Focus */
+.md-btn-outline:hover::before {
+  opacity: 0.04;
+}
+
+.md-btn-outline:focus::before {
+  opacity: 0.12;
+}
+
+.md-btn-outline:hover:focus::before {
+  opacity: 0.16;
+}
+
+/* Active */
+.md-btn-outline:active::after {
+  opacity: 0.16;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+/* Disabled */
+.md-btn-outline:disabled {
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+  background-color: transparent;
+  cursor: initial;
+}
+
+.md-btn-outline:disabled::before {
+  opacity: 0;
+}
+
+.md-btn-outline:disabled::after {
+  opacity: 0;
+}
+
+// .btn,
+// .btn:link {
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   padding: 1.5rem 3rem;
+//   display: inline-block;
+//   border-radius: 4px;
+//   transition: all 0.2s;
+//   position: relative;
+//   font-size: 2rem;
+//   font-weight: 700;
+//   border: none;
+//   cursor: pointer;
+//   max-width: 20rem;
+// }
+
+// .btn-circle {
+//   padding: 2rem 2rem;
+//   font-size: 4rem;
+//   border-radius: 100px;
+//   color: $color-white;
+//   transition: all 0.2s;
+//   background-color: $color-primary-light;
+//   cursor: pointer;
+// }
+
+// .btn:hover {
+//   transform: translateY(-3px);
+//   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+// }
+
+// .btn:hover::after {
+//   transform: scaleX(1.4) scaleY(1.6);
+//   opacity: 0;
+// }
+
+// .btn:active,
+// .btn:focus,
+// .btn-copyurl:active,
+// .btn-copyurl:focus,
+// .btn-kakao:active,
+// .btn-kakao:focus {
+//   outline: none;
+//   transform: translateY(-1px);
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+// }
+
+// .btn--white {
+//   background-color: #fff;
+//   color: #777;
+// }
+
+// .btn--white::after {
+//   background-color: #fff;
+// }
+
+// .btn--green {
+//   background-color: #55c57a;
+//   color: #fff;
+// }
+
+// .btn--green::after {
+//   background-color: #55c57a;
+// }
+
+// .btn--primary {
+//   background-color: $color-primary;
+//   color: #fff;
+// }
+
+// .btn--primary::after {
+//   background-color: $color-primary-light;
+// }
+
+// // .btn::after {
+// //     content: "";
+// //     display: inline-block;
+// //     height: 100%;
+// //     width: 100%;
+// //     border-radius: 10rem;
+// //     position: absolute;
+// //     top: 0;
+// //     left: 0;
+// //     z-index: -1;
+// //     transition: all .4s;
+// //     max-width: 20rem;
+
+// // }
+
+// .btn--animated {
+//   animation: moveInBottom 0.5s ease-out 0.75s;
+//   animation-fill-mode: backwards;
+// }
+
+// .btn--animated-appear {
+//   animation: appear 0.5s ease-out 0.75s;
+//   animation-fill-mode: backwards;
+// }
+
+// .btn-text {
+//   &:link,
+//   &:visited {
+//     font-size: $default-font-size;
+//     color: $color-primary;
+//     display: inline-block;
+//     text-decoration: none;
+//     border-bottom: 1px solid $color-primary;
+//     padding: 3px;
+//     transition: all 0.2s;
+//   }
+
+//   &:hover {
+//     background-color: $color-primary;
+//     color: #fff;
+//     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//     transform: translateY(-2px);
+//   }
+
+//   &:active {
+//     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+//     transform: translateY(0);
+//   }
+// }
+
+// .btn-text-scew {
+//   &:hover {
+//     background-color: $color-primary;
+//     color: #fff;
+//     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//     transform: translateY(-2px);
+//   }
+// }
+
+// // .btn-copyurl:visited,
+// .btn-copyurl,
+// .btn-copyurl:link,
+// .btn-copyurl:visited,
+// .btn-copyurl::selection {
+//   @include u-hover-less;
+//   margin-bottom: 3rem;
+//   width: 80%;
+//   border: 1px;
+//   border-color: $color-primary;
+//   background-color: $color-grey-light-1;
+//   max-width: 24rem;
+//   height: 6rem;
+
+//   &:hover {
+//     background-color: $color-primary;
+//     color: #fff;
+//     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//     transform: translateY(-2px);
+//   }
+// }
+
+// .btn-copysms,
+// .btn-copysms :visited,
+// .btn-copysms :link {
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   font-size: 2rem;
+//   font-weight: 700;
+//   color: $color-grey-text;
+//   font-style: normal;
+// }
+
+// // .btn-kakao:visited,
+
+// .btn-kakao,
+// .btn-kakao:link,
+// .btn-kakao:visited,
+// .btn-kakao::selection {
+//   height: 6rem;
+//   @include u-hover-less;
+//   margin-bottom: 3rem;
+//   width: 80%;
+//   border: none;
+//   background-color: $color-kakao;
+//   color: $color-kakao-text;
+//   max-width: 24rem;
+
+//   &:hover {
+//     background-color: $color-kakao-dark;
+//     color: #fff;
+//     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//     transform: translateY(-2px);
+//   }
+// }
+
+// .fab {
+//   z-index: 10;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   border: none;
+//   background-color: $color-primary;
+//   border-radius: 100px;
+//   box-shadow: 0 6px 10px 0 #666;
+//   transition: all 0.1s ease-in-out;
+//   font-weight: 700;
+//   font-size: 3rem;
+//   padding: 1rem 1.5rem;
+//   color: white;
+//   text-align: center;
+//   position: fixed;
+//   right: 2rem;
+//   bottom: 2rem;
+
+//   &:hover {
+//     box-shadow: 0 6px 14px 0 #666;
+//     transform: scale(1.05);
+//   }
+// }
+
+// .bar {
+//   @include u-flex-horizontal-items-centered;
+//   z-index: 10;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   border: none;
+//   box-shadow: 10px 10px 10px 10px #666;
+//   transition: all 0.1s ease-in-out;
+//   color: white;
+//   text-align: center;
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
+//   font-weight: 700;
+//   font-size: 2rem;
+//   background-image: linear-gradient(
+//     to right bottom,
+//     rgba($color-bar1, 1),
+//     rgba($color-bar2, 1)
+//   );
+// }
+
+// .bar-btn {
+//   // border: 1px solid $color-grey-light-1;
+//   //background-color: $color-primary;
+
+//   flex-grow: 1;
+//   padding: 1.6rem 0;
+//   cursor: pointer;
+//   font-weight: 600;
+//   font-size: 2rem;
+//   letter-spacing: 0.2rem;
+//   color: white;
+//   font-style: normal;
+//   text-decoration: none;
+// }
+
+// .insta-btn {
+// }
+
+// .naver-btn {
+//   @include u-flex-horizontal-items-centered;
+//   z-index: 10;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   border: none;
+//   box-shadow: 10px 10px 10px 10px #666;
+//   transition: all 0.1s ease-in-out;
+//   color: white;
+//   text-align: center;
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
+//   font-weight: 700;
+//   font-size: 2rem;
+//   background-image: linear-gradient(
+//     to right bottom,
+//     rgba($color-bar1, 1),
+//     rgba($color-bar2, 1)
+//   );
+// }
